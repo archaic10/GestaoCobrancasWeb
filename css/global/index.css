@@ -1,0 +1,302 @@
+body {
+  text-align: center;
+ /* background-color:sandybrown;*/
+  background-color:#e8f7fc; 
+}
+
+#conteudo {
+  /*text-align: center;  */
+ margin: 5%;
+
+}
+
+#page-process{
+
+  width: 60%;       
+  margin-left: 17%;
+}
+body{
+
+}
+/* img{
+  border-radius: 2%;
+} */
+button{
+color:whitesmoke;
+background-color: cornflowerblue;
+border-radius: 7%;  
+border:none;          
+height: 35px;
+width: 20%;
+margin-right: 33%;
+
+}
+form{
+  /*background-color:salmon;*/
+ 
+  padding-top: 10%;
+  padding-bottom: 30%;
+  padding-right: 47%;
+  
+  background-color: #FFF;
+  border-radius: 1%;  
+  border:none;
+  height: 8%; 
+  width: 200%;   
+  box-shadow: 3px 3px 18px #888888;
+}
+label{
+  padding-top: 5%;
+  font-size: 120%;
+  text-align: left;
+  color:#252a9c;
+  font-family: 'Roboto', sans-serif;
+}
+h1{
+  color:#252a9c;  
+  font-family: 'Roboto', sans-serif;
+  width: 80%;
+  text-align: center;
+}
+#icon-form{
+  border-radius: 105px;
+  margin-top: 5%;
+}
+
+input{
+  height: 2rem; 
+  /* width: 20rem ; */
+  width: 102% ;
+}
+.itens-cad{
+  width: 50%;
+  margin-left: 22%;
+}
+.form_cad{
+  display: flex;
+align-items: right;
+}
+select{
+height: 2.3rem; 
+/* width: 20.5rem ; */
+width: 102.5% ;
+}
+#pizza{
+height: 2.4rem; 
+/* width: 10.5rem ;
+width: 98.5% ; */
+width: 100%;
+}
+#adicionar{
+flex-grow: 1;
+flex-shrink: 1;
+max-width: 50%
+}
+#btnAdicionar{
+max-width: 50%;
+}
+#margem{
+max-width: 100%;
+
+display: flex;
+}
+#tituloIni{
+font-size: 250%;
+text-align: right;
+text-shadow: 1px 1px 2px #888888;
+
+}
+.btn{
+height: 100%;
+max-width: 20%;
+font-size: 150%;
+}
+#painel{
+max-width: 880%;   
+margin-right: 40%;
+}
+
+.first-field input{
+display: flex;
+width:  50%;
+align-items: left;
+}
+
+textarea{
+display: flex;
+width: 102%;
+height: 20%;
+}
+
+.group-duo input{
+  width: 100%;
+}
+
+
+
+.box-menu {
+  background-color: #FFF;
+  box-shadow: 3px 3px 18px #888888;
+  height: 100%;
+  top: 0px;
+  position: relative;
+  margin-right: 10%;
+  padding: 20px;
+  width: 15%;
+}
+@media(max-width:1000px){
+  .box-menu{
+    display: none;
+  }
+}
+ a{
+  text-decoration:none;
+ }
+
+
+.menu {
+  height: 100%;   
+  overflow: hidden;  /*makes the body non-scrollable (we will add scrolling to the sidebar and main content containers)*/
+  margin: 0px;  /*removes default style*/
+  display: flex;  /*enables flex content for its children*/
+  box-sizing: border-box;
+}
+
+.column {
+  height: 100%;  /*allows both columns to span the full height of the browser window*/
+  display: flex;
+  flex-direction: column;  /*places the left and right headers above the bottom content*/
+}
+
+#left {
+  flex-shrink: 0;  /*makes sure that content is not cut off in a smaller browser window*/
+}
+
+.top-left {
+  flex-shink: 0;
+  /* width: 380%; */
+  padding-bottom: 20%;
+  width:300%;
+}
+
+.top-right {
+  flex-shrink: 0;
+  display: inline-flex;
+}
+
+ul {
+  display: inline-flex;
+  list-style: none;
+}
+
+.bottom {
+  flex-grow: 1;  /*ensures that the container will take up the full height of the parent container*/
+  overflow-y: auto;  /*adds scroll to this container*/
+  border-bottom: 1px solid #759ee0;
+
+  padding-top: 20%;
+  width:200%;
+  /* border-he */
+}
+
+.bottom:hover {
+  flex-grow: 1;  /*ensures that the container will take up the full height of the parent container*/
+  overflow-y: auto;  /*adds scroll to this container*/
+
+  background-color: #759ee0;
+  padding-top: 20%;
+width:200%;
+  /* border-he */
+ 
+}
+#subMenuProcess, #subMenuDivida, #subMenuPagamento{
+  display: none;
+  
+}
+#subMenuProcess:hover{
+  display: inline;
+  width:100%;
+}
+#menuProcess:hover + #subMenuProcess{
+  display: inline; 
+  width:100%;
+}
+
+#subMenuDivida:hover{
+  display: inline;
+  width:100%;
+}
+#menuDivida:hover + #subMenuDivida{
+  display: inline; 
+  width:100%;
+}
+
+
+#subMenuPagamento:hover{
+  display: inline;
+  width:100%;
+}
+#menuPagamento:hover + #subMenuPagamento{
+  display: inline; 
+  width:100%;
+}
+
+table, td, th {
+  border: 1px solid #709bcf;
+}
+
+td, th{
+  width: 10%;
+}
+table {
+  
+  width: 190%;
+  border-collapse: collapse;
+}
+th{
+  height: 2rem ;
+}
+td{
+  height: 1.7rem ;
+}
+
+th{
+  background-color:  #909bcf;
+}
+
+.top-left, #menuPagamento,#menuDivida,#menuProcess {
+  font-family: 'Roboto', sans-serif;
+  color:#252a9c;
+}
+.top-left{
+  width:200%;
+}
+
+a{
+  text-align: left;
+}
+
+.button-table{
+  width:40%;
+  
+  border-color: red;
+  border-bottom: 1px solid #c4cbf1;
+  border-top: 1px solid #c4cbf1;
+  border-left: 1px solid #c4cbf1;
+  border-right: 1px solid #c4cbf1;
+}
+
+.editar{
+  width: 20%;
+  
+ 
+
+}
+
+.excluir{
+  width: 50%;
+}
+
+i{
+ background-color: red;
+}
