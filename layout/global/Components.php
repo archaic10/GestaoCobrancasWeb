@@ -6,11 +6,11 @@ class Components
     }
     public function label ($for, $class, $conteudo ){
         $evento = ''; 
-        return "<label  for=$for class=$class  > $conteudo</label>";
+        return "<label  for=$for class=$class  > $conteudo</label> <br>";
     }
     public function input($tipo, $class , $name, $id = '', $evento = "", $propriedade, $function = ""){
         $evento = '';
-        return "<input  type=$tipo  name=$name id=$id  $evento $propriedade class=$class >";
+        return "<input  type=$tipo  name=$name id=$id  $evento $propriedade class=$class > <br>";
     }
     	
     public function select( $name, $id = '', $arrays ,$indices, $evento = "", $function = ""){
@@ -21,7 +21,7 @@ class Components
                $conteudo .=" <option value='".$arrays[$x]."'>". $indices[$x]  ."</option>";
           }
         }
-        return "<select name=$name id=$name  $evento > ". $conteudo."</select >";   
+        return "<select name=$name id=$name  $evento > ". $conteudo."</select > <br>";   
     }
 
     public function selecDb( $name, $id = '', $arrays ,$indices, $evento = "", $function = ""){
@@ -33,7 +33,7 @@ class Components
             }   
         }
         
-        return "<select name=$name id=$name  $evento > ". $conteudo."</select >";       
+        return "<select name=$name id=$name  $evento > ". $conteudo."</select > <br>";       
     }
 
     public function table($id, $columns, $registros, $indices){
@@ -68,23 +68,23 @@ class Components
     }
 
     public function checkBox( $name, $id = '', $evento = "", $function = ""){
-        return "<input type='checkbox' name=$name id=$name  $evento >";
+        return "<input type='checkbox' name=$name id=$name  $evento > <br>";
     }
 
     public function radio( $name, $id = '', $evento = "", $function = ""){
-        return "<input type='radio' name=$name id=$name  $evento >";
+        return "<input type='radio' name=$name id=$name  $evento > <br>";
     }
 
     public function button( $name, $id = '',$descricao ,$evento = "", $function = ""){
-        return "<button type='button' name=$name id=$name  $evento >$descricao</button>";
+        return "<br><button type='button' name=$name id=$name  $evento >$descricao</button> <br>";
     }
 
     public function buttonPesquisa( $name, $id = '',$descricao ,$evento = "", $function = "", $class){
-        return "<button type='button' name=$name id=$name  $evento  class=$class>$descricao</button>";
+        return "<button type='button' name=$name id=$name  $evento  class=$class>$descricao</button> <br>";
     }
 
     public function textArea($nome, $id, $cols, $rows){
-        return " <textarea name=$nome id=$id cols=$cols, rows=$rows></textarea>";
+        return " <textarea name=$nome id=$id cols=$cols, rows=$rows></textarea> <br>";
     }
 
     public function section($class, $id, $conteudo){

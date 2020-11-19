@@ -12,9 +12,7 @@ require_once './Model/RespostaDAO.php';
         
         public function salvar(){                
              
-                foreach($_REQUEST['resposta'] as $indice){             
-           
-              
+                foreach($_REQUEST['resposta'] as $indice){  
                     $this->enquete = $_REQUEST['enquete'];
                     $this->resposta = $indice;           
                     $o = new class{};               

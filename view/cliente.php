@@ -19,29 +19,29 @@
                             $components ->form("", "", "", 
                                 $components ->h1("cad_titulo", "Cadastro de cliente").
                                 $components ->section("itens-cad", "",                           
-                                    $components -> label("documento", "form_cad", "Documento")."<br>".
+                                    $components -> label("documento", "form_cad", "Documento").
                                     $components -> input("text", "", "documento", 'Documento',  "",  "")
                                  ).                        
                                 $components ->section("itens-cad", "",                           
-                                    $components -> label("nome", "form_cad", "Nome")."<br>".
+                                    $components -> label("nome", "form_cad", "Nome").
                                     $components -> input("text", "", "nome", 'Nome',  "",  "")
                                 ).                                
                                  $components ->section("itens-cad", "",                           
-                                    $components -> label("email", "form_cad", "E-mail")."<br>".
+                                    $components -> label("email", "form_cad", "E-mail").
                                     $components -> input("text", "", "email", 'E-mail',  "",  "")
                                  ).
                                  $components ->section("itens-cad", "",                           
-                                    $components -> label("telefone", "form_cad", "Telefone")."<br>".
+                                    $components -> label("telefone", "form_cad", "Telefone").
                                     $components -> input("text", "", "telefone", 'Telefone',  "",  "")
                                  ).
                                  $components ->section("itens-cad", "",
-                                 $components ->label("estado", "form_cad", "Estado")."<br>".   
+                                 $components ->label("estado", "form_cad", "Estado").   
                                     $components ->select('estado', 'estado',  $codEstado ,$descEstado ,  "", "")
                                  ).
                                  $components ->section("itens-cad", "",
-                                    $components ->label("endereco", "form_cad", "Endereço")."<br>".   
+                                    $components ->label("endereco", "form_cad", "Endereço").   
                                     $components ->textArea("endereco", "endereco", "43", "5")
-                                 )."<br>".
+                                 ).
                                  $components ->button( "cadCliente", "cadCliente","Salvar" , "",  "")
                             )
                         ?>        
