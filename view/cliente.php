@@ -4,9 +4,12 @@
     $global->import('layout/global', 'index');
     $global->import('layout/global', 'menu'); 
     $global->import('layout/global', 'Components'); 
+    $global->import('controller', 'ClienteController'); 
     $components = new Components();
     $descEstado = array("Bahia", "São Paulo", "Rio de Janeiro");
     $codEstado = array("ba", "sp", "rj");
+    $dados = new ClienteController();
+
 ?>
         <div id="page-process">
             <div id="conteudo">
@@ -18,13 +21,15 @@
                     <?=                       
                             $components ->form("", "", "cadastro", 
                                 $components ->h1("cad_titulo", "Cadastro de cliente").
+                             
+                                $components -> input("hidden", "", "idCliente ", 'idCliente ',  "",  "").
                                 $components ->section("itens-cad", "",                           
                                     $components -> label("documento", "form_cad", "Documento").
                                     $components -> input("text", "", "documento", 'Documento',  "",  "")
                                  ).                        
                                 $components ->section("itens-cad", "",                           
-                                    $components -> label("nome", "form_cad", "Nome").
-                                    $components -> input("text", "", "nome", 'Nome',  "",  "")
+                                    $components -> label("nomeCliente", "form_cad", "Nome").
+                                    $components -> input("text", "", "nomeCliente", 'nomeCliente',  "",  "")
                                 ).                                
                                  $components ->section("itens-cad", "",                           
                                     $components -> label("email", "form_cad", "E-mail").
@@ -35,14 +40,14 @@
                                     $components -> input("text", "", "telefone", 'Telefone',  "",  "")
                                  ).
                                  $components ->section("itens-cad", "",
-                                 $components ->label("estado", "form_cad", "Estado").   
-                                    $components ->select('estado', 'estado',  $codEstado ,$descEstado ,  "", "")
+                                 $components ->label("uf ", "form_cad", "Estado").   
+                                    $components ->select('uf ', 'uf ',  $codEstado ,$descEstado ,  "", "")
                                  ).
                                  $components ->section("itens-cad", "",
                                     $components ->label("endereco", "form_cad", "Endereço").   
                                     $components ->textArea("endereco", "endereco", "43", "5")
                                  ).
-                                 $components ->button( "cadCliente", "cadCliente","Salvar" , "",  "")
+                                 $components ->button( "cadCliente", "cadCliente","Salvar" , "onclick='save()'",  "")
                             )
                         ?>        
                 </section>

@@ -304,3 +304,11 @@ i{
 .cadastro{
   padding-right: 0%;
 }
+
+.swal-footer {
+  text-align: center;
+  }
+
+  .swal-button--confirm{
+    width: 80px;
+  }

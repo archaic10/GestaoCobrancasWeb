@@ -1,26 +1,30 @@
-// var menu = document.getElementsByClassName("bottom");
-// function menuDown(){
-//     alert("");
-//     document.getElementById("subMenuProcess").style.display = "inline";
-// }
-
-function elementId(valor){
-    var objeto = {
-        "val": document.getElementById(valor).value,
-        "id": document.getElementById(valor).id,
-        "class": document.getElementById(valor).class,
-        "name": document.getElementById(valor).name,
-        "all": document.getElementById(valor)
+function mensagem (type){
+    switch(type){
+        case 'sucesso':
+            swal("Salvo com sucesso", "success", {
+                title: "Salvo com sucesso!",
+                text: "",
+                icon: "success",
+            }); 
+        break;
+        case 'erro':
+            swal("Salvo com sucesso", "success", {
+                title: "Erro ao salvar!",
+                text: "",
+                icon: "error",
+            }); 
+        break;
     }
-    return objeto;
 }
-function elementName(valor){
-    var objeto = {
-        "val": document.getElementsByName(valor).value,
-        "id": document.getElementsByName(valor).id,
-        "class": document.getElementsByName(valor).class,
-        "name": document.getElementsByName(valor).name,
-        "all": document.getElementsByName(valor)
-    }
-    return objeto;
+
+function  valida(status){
+    status == 200 ? mensagem('sucesso') : mensagem('erro');
+}
+
+function save(){
+    axios.post('/').then(function(response){
+        response.status == 200 ? valida(response.status): valida(response.status);
+    }).catch(function(error){
+
+    });
 }
