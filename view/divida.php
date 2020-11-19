@@ -18,7 +18,7 @@
                 </header>          
                 <section id="painel">
                     <?=                       
-                            $components ->form("", "", "",                                 
+                            $components ->form("", "", "cadastro",                                 
                                 $components ->h1("cad_titulo", "Cadastro de Dívida").                   
                                 $components ->section("itens-cad", "",
                                     $components ->label("cod_credor", "form_cad", "Credor").   

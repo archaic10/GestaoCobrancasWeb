@@ -92,7 +92,7 @@ class Components
     } 
 
     public function form($method, $id, $class, $conteudo){
-        return "<form  method=$method class=$class id=$id > $conteudo</form>"; 
+        return "<form  method=$method class=$class id='$id'  class='$class' > $conteudo</form>"; 
     } 
 
     public function h1($class, $conteudo){

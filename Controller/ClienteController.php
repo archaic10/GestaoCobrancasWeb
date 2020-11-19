@@ -2,11 +2,10 @@
     require_once 'Controller.php';
     require '../Model/ClienteDAO.php';
     class ClienteController extends Controller{
-        $model = new ClienteDAO();
     
         public function __constructor( ){
             $this->idCliente = $_REQUEST['idCliente'];
-            $this->nomeCliente = $_REQUEST['nomeCliente'};
+            $this->nomeCliente = $_REQUEST['nomeCliente'];
             $this->endereco = $_REQUEST['endereco'];
             $this->uf = $_REQUEST['uf'];
             $this->telefone = $_REQUEST['telefone'];
