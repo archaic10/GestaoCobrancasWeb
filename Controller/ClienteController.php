@@ -24,7 +24,8 @@
             $this->telefone = $_REQUEST['telefone'];
             $this->documento = $_REQUEST['documento'];
             $this->email = $_REQUEST['email'];
-            echo"<script>alert('tese')</script>";
+            echo   json_encode("EUYEUYEYEUYEUYEUYEUYE");
+            exit;
         }
 
         public function find (){     

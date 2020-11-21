@@ -1,14 +1,16 @@
 <?php  
     require_once '../layout/Global.php';
     $global = new GlobalApp();
+    $global->import('controller', 'ClienteController'); 
+    $dados = new ClienteController();
     $global->import('layout/global', 'index');
     $global->import('layout/global', 'menu'); 
     $global->import('layout/global', 'Components'); 
-    $global->import('controller', 'ClienteController'); 
+
     $components = new Components();
     $descEstado = array("Bahia", "São Paulo", "Rio de Janeiro");
     $codEstado = array("ba", "sp", "rj");
-    $dados = new ClienteController();
+
 
 ?>
         <div id="page-process">

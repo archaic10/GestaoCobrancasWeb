@@ -8,7 +8,7 @@ function mensagem (type){
             }); 
         break;
         case 'erro':
-            swal("Salvo com sucesso", "success", {
+            swal("Erro ao salvar!", "error  ", {
                 title: "Erro ao salvar!",
                 text: "",
                 icon: "error",
@@ -22,8 +22,12 @@ function  valida(status){
 }
 
 function save(){
-    axios.post('/').then(function(response){
-        response.status == 200 ? valida(response.status): valida(response.status);
+    var data = {
+        comando:"save",
+    }
+    axios.post('/',data).then(function(response){
+        console.log(response.data);
+        response.status == 200 ? valida(response.status) : valida(response.status);
     }).catch(function(error){
 
     });

@@ -10,7 +10,7 @@ class Components
     }
     public function input($tipo, $class , $name, $id = '', $evento = "", $propriedade, $function = ""){
         $evento = '';
-        return "<input  type=$tipo  name=$name id=$id  $evento $propriedade class='$class' value='save' > <br>";
+        return "<input  type=$tipo  name=$name id=$id  $evento $propriedade class='$class'  > <br>";
     }
     	
     public function select( $name, $id = '', $arrays ,$indices, $evento = "", $function = ""){
